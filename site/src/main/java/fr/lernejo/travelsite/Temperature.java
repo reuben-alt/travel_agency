@@ -3,7 +3,11 @@ package fr.lernejo.travelsite;
 import java.util.ArrayList;
 
 public class Temperature {
-    public String country;
-    public ArrayList<Items> temperatures;
+    public final String country;
+    public final ArrayList<Items> temperatures;
 
+    public Temperature(String country, ArrayList<Items> temperatures) {
+        this.country = country;
+        this.temperatures = temperatures;
+    }
 }
